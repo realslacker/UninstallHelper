@@ -9,7 +9,7 @@
 @{
 
 # Script module or binary module file associated with this manifest.
-RootModule = 'UninstallHelper.psm1'
+ModuleToProcess = 'UninstallHelper.psm1'
 
 # Version number of this module.
 ModuleVersion = '21.5.19.1212'
