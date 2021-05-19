@@ -327,7 +327,7 @@ function Get-MsiFileProperties {
 
             try {
 
-                $Properties = [ordered]@{
+                $Properties = @{
                     Name = $_.Name
                     Path = $_.FullName
                 }
@@ -351,7 +351,7 @@ function Get-MsiFileProperties {
 
                 $OpenView.GetType().InvokeMember( 'Close', 'InvokeMethod', $null, $OpenView, $null )
 
-                [pscustomobject]$Properties
+                New-Object -TypeName PSObject -Property $Properties
 
             } catch {
             
